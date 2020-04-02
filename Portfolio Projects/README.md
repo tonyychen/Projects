@@ -1,4 +1,6 @@
 # Portfolio Projects
+Note: Some files are too large to be tracked and published, for example the data files. For details, see .gitignore under Projects repository root
+
 1. Predictive Analysis Structure - Hotel Booking Classification
 	Highlights of this project:
 		Structured problem solving
