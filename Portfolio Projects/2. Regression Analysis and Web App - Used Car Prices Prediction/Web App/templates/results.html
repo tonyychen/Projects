@@ -7,16 +7,19 @@
 {% block body %}
 <h2>Here is the information you entered about the car: </h2>
 
-<p>'year': {{ year }}</p>
-<p>'manufacturer': {{ manufacturer }}</p>
-<p>'model': {{ model }}</p>
-<p>'fuel': {{ fuel }}</p>
-<p>'odometer': {{ odometer }}</p>
-<p>'title_status': {{ title_status }}</p>
-<p>'transmission': {{ transmission }}</p>
-<p>'state': {{ state }}</p>
+<ul>
+    <li>Year: {{ content['year'] }}</li>
+    <li>Manufacturer: {{ content['manufacturer'] }}</li>
+    <li>Model: {{ content['model'] }}</li>
+    <li>Fuel: {{ content['fuel'] }}</li>
+    <li>Odometer: {{ content['odometer'] }}</li>
+    <li>Title Status: {{ content['title_status'] }}</li>
+    <li>Transmission: {{ content['transmission'] }}</li>
+    <li>State: {{ content['state'] }}</li>
+</ul>
 
-<h4>The predicted price for the car is: ${{ price }}</h4>
+<div id = "pred">The predicted price for the car is: ${{ price }}</div>
+<br>
 
 {% from "_formhelpers.html" import render_field %}
 
