@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Used Car Price Prediction</title>
+{% endblock %}
+
+{% block body %}
+<h2>Please enter information about the used car</h2>
+
+{% from "_formhelpers.html" import render_field %}
+
+<form method = "POST" action = "/results">
+    <dl>
+        {{ render_field(form.year) }}
+        {{ render_field(form.manufacturer) }}
+        {{ render_field(form.model) }}
+        {{ render_field(form.fuel) }}
+        {{ render_field(form.odometer) }}
+        {{ render_field(form.title_status) }}
+        {{ render_field(form.transmission) }}
+        {{ render_field(form.state) }}
+    </dl>
+    <input type = "submit" value = "Submit" name = "Submit">
+</form>
+
+{% endblock %}
