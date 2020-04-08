@@ -29,8 +29,8 @@ Note: Some files are too large to be tracked and published, for example the data
 	* RandomForestRegressor and methods on regression performance evaluation/improvements
 	* Building a web app that accepts user input to make predictions
     
-    *Note that due to the hosting size constraint, the web app was not deployed to a specific server and server dependencies are not reflected in the project requirements. I would continue to work to resolve this issue. Meanwhile, the project files (including data files) can be accessed at:
-    https://drive.google.com/open?id=18AAC-C5HVvpiSuzuVZ6buks7sox2xewo
+		*Note that due to the hosting size constraint, the web app was not deployed to a specific server and server dependencies are not reflected in the project requirements. I would continue to work to resolve this issue. Meanwhile, the project files (including data files) can be accessed at:
+		https://drive.google.com/open?id=18AAC-C5HVvpiSuzuVZ6buks7sox2xewo
     ---
     
 	**Citation:**
