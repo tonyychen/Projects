@@ -1,0 +1,3 @@
+Goal: What are the most important words, topics for each national park? It may help TripAdvisor to put relevant data on top of the results
+
+Also compare the difference of focus on positive and negative reviews for all national parks and each national park as an individual
