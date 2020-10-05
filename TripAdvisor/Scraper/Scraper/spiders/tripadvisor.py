@@ -23,8 +23,14 @@ class TripadvisorSpider(scrapy.Spider):
         js = self.json_extract(js, 'reviewListPage')[0] #only 1 "reviewListPage" should exist
 
         # output json
-        with open('testfile.json', 'w') as f:
-           json.dump(js, f)
+        yield {
+            'Review_JSON': js
+        }
+
+        #Pagination (next page)
+        next_page = response.xpath('//a[@class="ui_button nav next primary "]/@href').get()
+        if next_page:
+            yield response.follow(next_page, callback=self.parse)
 
     def json_extract(self, obj, key):
         """Extract nested values from a JSON tree."""
