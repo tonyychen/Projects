@@ -1,6 +1,7 @@
 **/Data
 **/Pkl_objects
 **/Joblib_objects
+**/\.ipynb_checkpoints
 
 *.json
 *.csv

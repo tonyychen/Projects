@@ -21,6 +21,7 @@ class TripadvisorSpider(scrapy.Spider):
         # only get the part where key = "reviewListPage", which contains review info
         js = json.loads(js)
         js = self.json_extract(js, 'reviewListPage')[0] #only 1 "reviewListPage" should exist
+        js = json.dumps(js)
 
         # output json
         yield {
