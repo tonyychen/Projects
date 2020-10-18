@@ -16,7 +16,7 @@ Note: Because some data files are too large, they might not be committed. Please
 	
 	URL: https://www.kaggle.com/austinreese/craigslist-carstrucks-data
 	
-	**The following description is from Kaggle:**
+	**The following descriptions are from Kaggle:**
     	
 	**Context**
 	
