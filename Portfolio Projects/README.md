@@ -1,8 +1,9 @@
 # Portfolio Projects
 This repository contains a variety of my data science portfolio projects covering different topics.
+
 Note: Because some data files are too large, they might not be committed. Please refer to the project descriptions below on the data sources.
 
-- **Predictive Analysis Structure - Hotel Booking Classification**
+- ### Predictive Analysis Structure - Hotel Booking Classification
 
 	**Highlights of this project**:
 	- Structured problem solving
@@ -23,7 +24,7 @@ Note: Because some data files are too large, they might not be committed. Please
 <br>
 <br>
 
-- **Regression Analysis and Web App - Used Car Prices Prediction**
+- ### Regression Analysis and Web App - Used Car Prices Prediction
 
 	**Highlights of this project**:
 	- Data pre-processing and text manipulations
