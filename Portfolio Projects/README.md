@@ -5,9 +5,38 @@ Note: Because some data files are too large, they might not be committed. Please
 
 **Github sometimes has issues with rendering Jupyter Notebooks, please use https://nbviewer.jupyter.org/ and paste the github link to view the notebooks if Github fails. Thanks.**
 
+- ### [Image Classification using CNN](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/CNN%20Classification.ipynb)
+
+	**Highlights of this project**:
+	- Convolutional Neural Network (CNN) with Tensorflow
+	- Image Augmentation to prevent overfitting
+	- Transfer Learning from Inception V3
+	- Classification with Sparse Categorical Cross-entropy Loss
+
+	**Citation:**
+	This notebook was directly run as a notebook on Kaggle, it is using Intel Image Classification Dataset as well as built on existing model on Inception V3
+	
+	URLs:
+	- https://www.kaggle.com/puneet6060/intel-image-classification
+	- https://www.kaggle.com/keras/inceptionv3
+	
+	**The following descriptions are from Kaggle:**
+	
+	**Context**
+	
+	This is image data of Natural Scenes around the world.
+	
+	**Content**
+	
+	This Data contains around 25k images of size 150x150 distributed under 6 categories. The Train, Test and Prediction data is separated in each zip files. There are around 14k images in Train, 3k in Test and 7k in Prediction.This data was initially published on https://datahack.analyticsvidhya.com by Intel to host a Image classification Challenge.
+	
+	
+---
+
 - ### [Real/Fake News Classification using RNN](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/Anomaly%20Detection%20using%20RNN.ipynb)
 
 	**Highlights of this project**:
+	- Recurrent Neural Network (RNN) with Tensorflow
 	- Natural Language Processing (NLP)
 	- Text Encoding
 	- Long Short-Term Memory (LSTM) method to model text sequence patterns
