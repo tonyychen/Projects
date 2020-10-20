@@ -3,6 +3,27 @@ This repository contains a variety of my data science portfolio projects coverin
 
 Note: Because some data files are too large, they might not be committed. Please refer to the project descriptions below on the data sources.
 
+**Github sometimes has issues with rendering Jupyter Notebooks, please use https://nbviewer.jupyter.org/ and paste the github link to view the notebooks if Github fails. Thanks.**
+
+- ### [Real/Fake News Classification using RNN](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/Anomaly%20Detection%20using%20RNN.ipynb)
+
+	**Highlights of this project**:
+	- Natural Language Processing (NLP)
+	- Text Encoding
+	- Long Short-Term Memory (LSTM) method to model text sequence patterns
+	- Binary Classification with Binary Cross-entropy Loss
+
+	**Citation:**
+	This notebook was directly run as a notebook on Kaggle, it is using Kaggle - Fake and real news dataset
+	
+	URL: https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
+	
+	Acknowledgements
+	- Ahmed H, Traore I, Saad S. “Detecting opinion spams and fake news using text classification”, Journal of Security and Privacy, Volume 1, Issue 1, Wiley, January/February 2018.
+	- Ahmed H, Traore I, Saad S. (2017) “Detection of Online Fake News Using N-Gram Analysis and Machine Learning Techniques. In: Traore I., Woungang I., Awad A. (eds) Intelligent, Secure, and Dependable Systems in Distributed and Cloud Environments. ISDDC 2017. Lecture Notes in Computer Science, vol 10618. Springer, Cham (pp. 127-138).
+	
+---
+
 - ### [Regression Analysis and Web App - Used Car Prices Prediction](https://github.com/tonyychen/Projects/tree/master/Portfolio%20Projects/Regression%20Analysis%20and%20Web%20App%20-%20Used%20Car%20Prices%20Prediction)
 
 	**Highlights of this project**:
