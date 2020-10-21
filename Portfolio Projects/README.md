@@ -50,6 +50,22 @@ Note: Because some data files are too large, they might not be committed. Please
 	Acknowledgements
 	- Ahmed H, Traore I, Saad S. “Detecting opinion spams and fake news using text classification”, Journal of Security and Privacy, Volume 1, Issue 1, Wiley, January/February 2018.
 	- Ahmed H, Traore I, Saad S. (2017) “Detection of Online Fake News Using N-Gram Analysis and Machine Learning Techniques. In: Traore I., Woungang I., Awad A. (eds) Intelligent, Secure, and Dependable Systems in Distributed and Cloud Environments. ISDDC 2017. Lecture Notes in Computer Science, vol 10618. Springer, Cham (pp. 127-138).
+
+---
+
+- ### [Text Generation from Book "Dorothy and the Wizard in Oz"](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/Text_Generation_with_RNN.ipynb)
+
+	**Highlights of this project**:
+	- Recurrent Neural Network (RNN) with Tensorflow
+	- Natural Language Processing (NLP)
+	- Text Encoding
+	- Long Short-Term Memory (LSTM) method to model text sequence patterns
+	- Sequential Text Generation
+
+	**Citation:**
+	This project was completed on top of Project Gutenberg's Dorothy and the Wizard in Oz, by L. Frank Baum.
+	
+	URL: http://www.gutenberg.org/cache/epub/420/pg420.txt
 	
 ---
 
