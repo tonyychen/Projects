@@ -6,6 +6,7 @@ Note: Because some data files are too large, they might not be committed. Please
 **Github sometimes has issues with rendering Jupyter Notebooks, please use https://nbviewer.jupyter.org/ and paste the github link to view the notebooks if Github fails. Thanks.**
 
 - ### [Image Classification using CNN](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/CNN%20Classification.ipynb)
+	This notebook was originally created on Kaggle
 
 	**Highlights of this project**:
 	- Convolutional Neural Network (CNN) with Tensorflow
@@ -14,7 +15,7 @@ Note: Because some data files are too large, they might not be committed. Please
 	- Classification with Sparse Categorical Cross-entropy Loss
 
 	**Citation:**
-	This notebook was directly run as a notebook on Kaggle, it is using Intel Image Classification Dataset as well as built on existing model on Inception V3
+	Intel Image Classification Dataset and Inception V3
 	
 	URLs:
 	- https://www.kaggle.com/puneet6060/intel-image-classification
@@ -34,6 +35,7 @@ Note: Because some data files are too large, they might not be committed. Please
 ---
 
 - ### [Real/Fake News Classification using RNN](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/Anomaly%20Detection%20using%20RNN.ipynb)
+	This notebook was originally created on Kaggle
 
 	**Highlights of this project**:
 	- Recurrent Neural Network (RNN) with Tensorflow
@@ -43,7 +45,7 @@ Note: Because some data files are too large, they might not be committed. Please
 	- Binary Classification with Binary Cross-entropy Loss
 
 	**Citation:**
-	This notebook was directly run as a notebook on Kaggle, it is using Kaggle - Fake and real news dataset
+	Kaggle - Fake and real news dataset
 	
 	URL: https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
 	
@@ -54,6 +56,7 @@ Note: Because some data files are too large, they might not be committed. Please
 ---
 
 - ### [Text Generation from Book "Dorothy and the Wizard in Oz"](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/Text_Generation_with_RNN.ipynb)
+	This book was originally created on Google Colab
 
 	**Highlights of this project**:
 	- Recurrent Neural Network (RNN) with Tensorflow
@@ -63,6 +66,7 @@ Note: Because some data files are too large, they might not be committed. Please
 	- Sequential Text Generation
 
 	**Citation:**
+	
 	This project was completed on top of Project Gutenberg's Dorothy and the Wizard in Oz, by L. Frank Baum.
 	
 	URL: http://www.gutenberg.org/cache/epub/420/pg420.txt
