@@ -5,6 +5,8 @@ Note: Because some data files are too large, they might not be committed. Please
 
 **Github sometimes has issues with rendering Jupyter Notebooks, please use https://nbviewer.jupyter.org/ and paste the github link to view the notebooks if Github fails. Thanks.**
 
+## Deep Learning with Tensorflow
+
 - ### [Image Classification using CNN](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/CNN%20Classification.ipynb)
 	This notebook was originally created on Kaggle
 
@@ -71,7 +73,9 @@ Note: Because some data files are too large, they might not be committed. Please
 	
 	URL: http://www.gutenberg.org/cache/epub/420/pg420.txt
 	
----
+
+
+## Machine Learning
 
 - ### [Regression Analysis and Web App - Used Car Prices Prediction](https://github.com/tonyychen/Projects/tree/master/Portfolio%20Projects/Regression%20Analysis%20and%20Web%20App%20-%20Used%20Car%20Prices%20Prediction)
 
