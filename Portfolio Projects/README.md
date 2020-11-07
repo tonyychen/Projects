@@ -10,7 +10,7 @@ Note: Because some data files are too large, they might not be committed. Please
 - ### [TripAdvisor Review Analysis](https://github.com/tonyychen/Projects/tree/master/Portfolio%20Projects/TripAdvisor)
 	Updates when new ideas emerge
 	
-	**A separate README file is available inside the project
+	**A separate README file is available inside the project**
 
 	
 	
