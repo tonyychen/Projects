@@ -5,6 +5,16 @@ Note: Because some data files are too large, they might not be committed. Please
 
 **Github sometimes has issues with rendering Jupyter Notebooks, please use https://nbviewer.jupyter.org/ and paste the github link to view the notebooks if Github fails. Thanks.**
 
+## Kaleidoscope
+
+- ### [TripAdvisor Review Analysis](https://github.com/tonyychen/Projects/tree/master/Portfolio%20Projects/TripAdvisor)
+	Updates when new ideas emerge
+	
+	**A separate README file is available inside the project
+
+	
+	
+
 ## Deep Learning with Tensorflow
 
 - ### [Image Classification using CNN](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/CNN%20Classification.ipynb)
