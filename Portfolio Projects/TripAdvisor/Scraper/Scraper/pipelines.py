@@ -44,6 +44,6 @@ class ScraperPipeline:
         # only get the part where key = "reviewListPage", which contains review info
         js = json.loads(js)
         js = self.json_extract(js, 'reviewListPage')[0] #only 1 "reviewListPage" should exist
-        js = json.dumps(js)
+        #js = json.dumps(js) #Commented out cause We would output to JSON directly
 
         return {'Review_JSON': js}
