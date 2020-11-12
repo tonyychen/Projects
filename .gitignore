@@ -2,7 +2,9 @@
 **/Pkl_objects
 **/Joblib_objects
 
+#Ignore personal notes
 **/Personal Notes
 
+#Ingore settings so that it can store secrets
 **/settings.py
 
