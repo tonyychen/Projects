@@ -20,3 +20,8 @@ Note: Because some data files are too large, they might not be committed.
 - ### [Acadia Reviews Text Analysis](https://nbviewer.jupyter.org/github/tonyychen/Projects/blob/master/Portfolio%20Projects/TripAdvisor/Notebooks/2.%20Acadia%20Reviews%20Text%20Analysis.ipynb)
   - Performed text analysis by parsing out individual words and plotting WordClouds. We tried to see word/topic importance in different contexts.
   - Further NLP analysis possible once we have more review data.
+
+## Time Pieces:
+
+#### 2020-11-12: Allow feed export to Amazon S3
+![S3 Snapshot](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/TripAdvisor/Snapshots/S3%20Snapshot.PNG)
