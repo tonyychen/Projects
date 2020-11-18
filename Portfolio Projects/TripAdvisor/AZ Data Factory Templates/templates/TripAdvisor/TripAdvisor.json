@@ -1,0 +1,510 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name"
+		},
+		"AmazonS3": {
+			"type": "string"
+		},
+		"AzureDataLakeStorage": {
+			"type": "string"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "[concat(parameters('factoryName'), '/TripAdvisor')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "Copy from S3 to Azure",
+						"type": "Copy",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"source": {
+								"type": "JsonSource",
+								"storeSettings": {
+									"type": "AmazonS3ReadSettings",
+									"recursive": true,
+									"wildcardFolderPath": "*",
+									"wildcardFileName": "*.json"
+								},
+								"formatSettings": {
+									"type": "JsonReadSettings"
+								}
+							},
+							"sink": {
+								"type": "JsonSink",
+								"storeSettings": {
+									"type": "AzureBlobFSWriteSettings"
+								},
+								"formatSettings": {
+									"type": "JsonWriteSettings",
+									"filePattern": "setOfObjects"
+								}
+							},
+							"enableStaging": false
+						},
+						"inputs": [
+							{
+								"referenceName": "review_s3_source",
+								"type": "DatasetReference"
+							}
+						],
+						"outputs": [
+							{
+								"referenceName": "reviews_sink",
+								"type": "DatasetReference"
+							}
+						]
+					}
+				],
+				"annotations": [],
+				"lastPublishTime": "2020-11-18T16:08:42Z"
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/review_s3_source')]",
+				"[concat(variables('factoryId'), '/datasets/reviews_sink')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/review_s3_source')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "[parameters('AmazonS3')]",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Json",
+				"typeProperties": {
+					"location": {
+						"type": "AmazonS3Location",
+						"bucketName": "tonyychen-tripadvisor"
+					}
+				},
+				"schema": {
+					"type": "object",
+					"properties": {
+						"Review_JSON": {
+							"type": "object",
+							"properties": {
+								"totalCount": {
+									"type": "integer"
+								},
+								"preferredReviewIds": {
+									"type": "array"
+								},
+								"reviews": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"id": {
+												"type": "integer"
+											},
+											"url": {
+												"type": "string"
+											},
+											"location": {
+												"type": "object",
+												"properties": {
+													"locationId": {
+														"type": "integer"
+													},
+													"name": {
+														"type": "string"
+													},
+													"url": {
+														"type": "string"
+													},
+													"placeType": {
+														"type": "string"
+													},
+													"parentGeoId": {
+														"type": "integer"
+													},
+													"__typename": {
+														"type": "string"
+													},
+													"additionalNames": {
+														"type": "object",
+														"properties": {
+															"normal": {
+																"type": "string"
+															},
+															"long": {
+																"type": "string"
+															},
+															"longOnlyParent": {
+																"type": "string"
+															},
+															"longParentAbbreviated": {
+																"type": "string"
+															},
+															"longOnlyParentAbbreviated": {
+																"type": "string"
+															},
+															"longParentStateAbbreviated": {
+																"type": "string"
+															},
+															"longOnlyParentStateAbbreviated": {
+																"type": "string"
+															},
+															"geo": {
+																"type": "string"
+															},
+															"abbreviated": {
+																"type": "string"
+															},
+															"abbreviatedRaw": {
+																"type": "string"
+															},
+															"abbreviatedStateTerritory": {
+																"type": "string"
+															},
+															"abbreviatedStateTerritoryRaw": {
+																"type": "string"
+															}
+														}
+													},
+													"parent": {
+														"type": "object",
+														"properties": {
+															"locationId": {
+																"type": "integer"
+															},
+															"additionalNames": {
+																"type": "object",
+																"properties": {
+																	"normal": {
+																		"type": "string"
+																	},
+																	"long": {
+																		"type": "string"
+																	},
+																	"longOnlyParent": {
+																		"type": "string"
+																	},
+																	"longParentAbbreviated": {
+																		"type": "string"
+																	},
+																	"longOnlyParentAbbreviated": {
+																		"type": "string"
+																	},
+																	"longParentStateAbbreviated": {
+																		"type": "string"
+																	},
+																	"longOnlyParentStateAbbreviated": {
+																		"type": "string"
+																	},
+																	"geo": {
+																		"type": "string"
+																	},
+																	"abbreviated": {
+																		"type": "string"
+																	},
+																	"abbreviatedRaw": {
+																		"type": "string"
+																	},
+																	"abbreviatedStateTerritory": {
+																		"type": "string"
+																	},
+																	"abbreviatedStateTerritoryRaw": {
+																		"type": "string"
+																	}
+																}
+															}
+														}
+													}
+												}
+											},
+											"createdDate": {
+												"type": "string"
+											},
+											"publishedDate": {
+												"type": "string"
+											},
+											"provider": {
+												"type": "object",
+												"properties": {
+													"isLocalProvider": {
+														"type": "boolean"
+													},
+													"isToolsProvider": {
+														"type": "boolean"
+													}
+												}
+											},
+											"userProfile": {
+												"type": "object",
+												"properties": {
+													"id": {
+														"type": "string"
+													},
+													"userId": {
+														"type": "string"
+													},
+													"isMe": {
+														"type": "boolean"
+													},
+													"isVerified": {
+														"type": "boolean"
+													},
+													"displayName": {
+														"type": "string"
+													},
+													"username": {
+														"type": "string"
+													},
+													"avatar": {
+														"type": "object",
+														"properties": {
+															"id": {
+																"type": "integer"
+															},
+															"photoSizes": {
+																"type": "array",
+																"items": {
+																	"type": "object",
+																	"properties": {
+																		"url": {
+																			"type": "string"
+																		},
+																		"width": {
+																			"type": "integer"
+																		},
+																		"height": {
+																			"type": "integer"
+																		}
+																	}
+																}
+															}
+														}
+													},
+													"hometown": {
+														"type": "object",
+														"properties": {
+															"locationId": {
+																"type": "integer"
+															},
+															"fallbackString": {
+																"type": "string"
+															},
+															"location": {
+																"type": "object",
+																"properties": {
+																	"locationId": {
+																		"type": "integer"
+																	},
+																	"additionalNames": {
+																		"type": "object",
+																		"properties": {
+																			"long": {
+																				"type": "string"
+																			}
+																		}
+																	},
+																	"name": {
+																		"type": "string"
+																	}
+																}
+															}
+														}
+													},
+													"contributionCounts": {
+														"type": "object",
+														"properties": {
+															"sumAllUgc": {
+																"type": "integer"
+															},
+															"helpfulVote": {
+																"type": "integer"
+															}
+														}
+													},
+													"route": {
+														"type": "object",
+														"properties": {
+															"url": {
+																"type": "string"
+															}
+														}
+													},
+													"isFollowing": {
+														"type": "boolean"
+													}
+												}
+											},
+											"title": {
+												"type": "string"
+											},
+											"language": {
+												"type": "string"
+											},
+											"translationType": {
+												"type": "null"
+											},
+											"roomTip": {
+												"type": "null"
+											},
+											"tripInfo": {
+												"type": "object",
+												"properties": {
+													"stayDate": {
+														"type": "string"
+													},
+													"tripType": {
+														"type": "string"
+													}
+												}
+											},
+											"additionalRatings": {
+												"type": "array"
+											},
+											"mgmtResponse": {
+												"type": "null"
+											},
+											"text": {
+												"type": "string"
+											},
+											"username": {
+												"type": "string"
+											},
+											"connectionToSubject": {
+												"type": "null"
+											},
+											"locationId": {
+												"type": "integer"
+											},
+											"rating": {
+												"type": "integer"
+											},
+											"absoluteUrl": {
+												"type": "string"
+											},
+											"mcid": {
+												"type": "integer"
+											},
+											"mtProviderId": {
+												"type": "integer"
+											},
+											"photos": {
+												"type": "array"
+											},
+											"original": {
+												"type": "null"
+											},
+											"attribution": {
+												"type": "null"
+											},
+											"__typename": {
+												"type": "string"
+											},
+											"helpfulVotes": {
+												"type": "integer"
+											},
+											"photoIds": {
+												"type": "array"
+											},
+											"route": {
+												"type": "object",
+												"properties": {
+													"url": {
+														"type": "string"
+													}
+												}
+											},
+											"socialStatistics": {
+												"type": "object",
+												"properties": {
+													"followCount": {
+														"type": "integer"
+													},
+													"isFollowing": {
+														"type": "boolean"
+													},
+													"isLiked": {
+														"type": "boolean"
+													},
+													"isReposted": {
+														"type": "boolean"
+													},
+													"isSaved": {
+														"type": "boolean"
+													},
+													"likeCount": {
+														"type": "integer"
+													},
+													"repostCount": {
+														"type": "integer"
+													},
+													"tripCount": {
+														"type": "integer"
+													}
+												}
+											},
+											"status": {
+												"type": "string"
+											},
+											"userId": {
+												"type": "string"
+											},
+											"originalLanguage": {
+												"type": "string"
+											},
+											"labels": {
+												"type": "array"
+											},
+											"alertStatus": {
+												"type": "boolean"
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/reviews_sink')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "[parameters('AzureDataLakeStorage')]",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Json",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"fileSystem": "tonyychen-tripadvisor"
+					}
+				},
+				"schema": {}
+			},
+			"dependsOn": []
+		}
+	]
+}
