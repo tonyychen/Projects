@@ -1,0 +1,18 @@
+{
+	"name": "AZDataLake_reviews_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "tonyychen-tripadvisor"
+			}
+		},
+		"schema": {}
+	}
+}
