@@ -21,7 +21,10 @@ Note: Because some data files are too large, they might not be committed.
   - Performed text analysis by parsing out individual words and plotting WordClouds. We tried to see word/topic importance in different contexts.
   - Further NLP analysis possible once we have more review data.
 
-## Time Pieces:
+## Time Fragments:
 
 #### 2020-11-12: Allow feed export to Amazon S3
 ![S3 Snapshot](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/TripAdvisor/Snapshots/S3%20Snapshot.PNG)
+
+#### 2020-11-18: Initiated a Azure Data Factory Pipeline to move the JSON files from S3 to Azure Data Lake Gen2
+
