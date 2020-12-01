@@ -8,3 +8,5 @@
 #Ingore secrets
 **/aws_credentials.py
 
+#__pycache__
+**/__pycache__
