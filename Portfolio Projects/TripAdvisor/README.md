@@ -28,6 +28,6 @@ Note: Because some data files are too large, they might not be committed.
 
 #### 2020-11-18: Initiated a Azure Data Factory Pipeline to move the JSON files from S3 to Azure Data Lake Gen2
 
-#### 2020-12-01: Import JSON files from Azure Data Lake Gen2 to Azure DB and store in a table called Reviews; supports incremental import
+#### 2020-12-01: Import JSON files from Azure Data Lake Gen2 to Azure SQL DB and store in a table called Reviews; supports incremental import
 ![SELECT Reviews Snapshot](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/TripAdvisor/Snapshots/SELECT%Reviews%Snapshot.PNG)
 
