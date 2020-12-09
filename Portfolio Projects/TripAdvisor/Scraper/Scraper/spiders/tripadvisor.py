@@ -4,7 +4,7 @@ import scrapy
 class TripadvisorSpider(scrapy.Spider):
     name = 'tripadvisor'
     allowed_domains = ['tripadvisor.com']
-    start_urls = ['https://www.tripadvisor.com/Attraction_Review-g60709-d12785836-Reviews-Acadia_National_Park-Bar_Harbor_Mount_Desert_Island_Maine.html#REVIEWS']
+    start_urls = ['https://www.tripadvisor.com/Attraction_Review-g43447-d12659479-Reviews-Voyageurs_National_Park-Ray_Minnesota.html'] #['https://www.tripadvisor.com/Attraction_Review-g60709-d12785836-Reviews-Acadia_National_Park-Bar_Harbor_Mount_Desert_Island_Maine.html#REVIEWS']
 
     def parse(self, response):
         js = response.xpath(
