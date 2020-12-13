@@ -97,3 +97,7 @@ FEEDS = {aws_credentials.S3_url:{
 }}
 AWS_ACCESS_KEY_ID = aws_credentials.AccessKey
 AWS_SECRET_ACCESS_KEY = aws_credentials.Secret_AccessKey
+
+#Configure Logging
+LOG_FILE = 'ScrapeLog.txt'
+LOG_LEVEL = 'WARNING'
