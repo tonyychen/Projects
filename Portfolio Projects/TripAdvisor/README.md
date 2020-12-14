@@ -32,3 +32,4 @@ Note: Because some data files are too large, they might not be committed.
 ![SELECT Reviews Snapshot](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/TripAdvisor/Snapshots/SELECT%20Reviews%20Snapshot.PNG)
 
 #### 2020-12-14: Scraped available TripAdvisor reviews across all National Parks (see [nationalpark_urls.py](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/TripAdvisor/Scraper/Scraper/spiders/nationalpark_urls.py)) and used established pipeline to import into Azure SQL DB
+![SELECT All Reviews Count Snapshot](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/TripAdvisor/Snapshots/SELECT%20All%20Reviews%20Count%20Snapshot.PNG)
