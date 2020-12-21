@@ -6,7 +6,7 @@
 **/Personal Notes
 
 #Ingore secrets
-**/aws_credentials.py
+**/*credentials.py
 
 #__pycache__
 **/__pycache__
