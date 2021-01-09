@@ -5,8 +5,8 @@ Note: Because some data files are too large, they might not be committed.
 
 ## Here is the progress we have till now:
 
-- ### [Scraping reviews on Arcadia National Park](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/TripAdvisor/Scraper/Scraper/spiders/tripadvisor.py)
-  - Using Scrapy, starting from small, we focus on scraping reviews on Arcadia National Park because I am a national park fan.
+- ### [Scraping reviews on Acadia National Park](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/TripAdvisor/Scraper/Scraper/spiders/tripadvisor.py)
+  - Using Scrapy, starting from small, we focus on scraping reviews on Acadia National Park because I am a national park fan.
   - We grabbed JSON data that contains the reviews, the JSON data is messy so we did some preliminary cleaning using regex in the [pipeline](https://github.com/tonyychen/Projects/blob/master/Portfolio%20Projects/TripAdvisor/Scraper/Scraper/pipelines.py).
   - We then dump the JSON data into a JSON file for processing.
   
