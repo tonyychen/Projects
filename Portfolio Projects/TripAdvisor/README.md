@@ -21,7 +21,7 @@ Note: Because some data files are too large, they might not be committed.
   - Performed text analysis by parsing out individual words and plotting WordClouds. We tried to see word/topic importance in different contexts.
   - Further NLP analysis possible once we have more review data.
 
-- ### [ALL National Park Reviews Exploratory Analysis]()
+- ### [ALL National Park Reviews Exploratory Analysis](https://nbviewer.jupyter.org/github/tonyychen/Projects/blob/master/Portfolio%20Projects/TripAdvisor/Notebooks/3.%20ALL%20National%20Park%20Reviews%20Exploratory%20Analysis.ipynb)
   - More Data: Exploratory analysis on 45+ national parks
   - Fetch Data directly from Azure SQL DB
   - Explored Time-Series and Geographical distributions on the review data.
