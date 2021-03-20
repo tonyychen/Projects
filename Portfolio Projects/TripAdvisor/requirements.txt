@@ -79,7 +79,7 @@ pandocfilters==1.4.2
 parsel==1.5.2
 parso==0.7.0
 pickleshare==0.7.5
-Pillow==8.0.1
+Pillow==8.1.1
 plotly @ file:///tmp/build/80754af9/plotly_1601587622649/work
 pluggy==0.13.1
 prometheus-client==0.8.0
