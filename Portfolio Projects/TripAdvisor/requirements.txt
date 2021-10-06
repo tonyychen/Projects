@@ -113,7 +113,7 @@ requests-oauthlib==1.3.0
 retrying==1.3.3
 rsa==4.6
 Scrapy @ file:///C:/ci/scrapy_1602504122146/work
-scrapy-splash==0.7.2
+scrapy-splash==0.8.0
 Send2Trash==1.5.0
 service-identity @ file:///tmp/build/80754af9/service_identity_1592494375577/work
 six==1.15.0
