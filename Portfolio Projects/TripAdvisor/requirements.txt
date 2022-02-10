@@ -119,7 +119,7 @@ service-identity @ file:///tmp/build/80754af9/service_identity_1592494375577/wor
 six==1.15.0
 tensorboard==2.3.0
 tensorboard-plugin-wit==1.7.0
-tensorflow==2.3.1
+tensorflow==2.5.3
 tensorflow-estimator==2.3.0
 termcolor==1.1.0
 terminado==0.9.1
