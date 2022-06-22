@@ -70,7 +70,7 @@ nbformat==5.0.7
 nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1601499549014/work
 nltk @ file:///tmp/build/80754af9/nltk_1592496090529/work
 notebook @ file:///C:/ci/notebook_1601501643625/work
-numpy==1.18.5
+numpy==1.22.0
 oauthlib==3.1.0
 opt-einsum==3.3.0
 packaging==20.4
